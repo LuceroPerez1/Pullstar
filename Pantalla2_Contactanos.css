@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
 /* CONTENEDOR */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    background: #1f274c;
 }
 
 section{
@@ -12,6 +13,7 @@ section{
    justify-content: center;
    align-items: center;
    min-height: 100vh;
+   background: #095a55;
 }
 
 section::before{
@@ -21,6 +23,7 @@ section::before{
    left: 0;
    width: 50%;
    height: 100%;
+   background: #fff38e;
 }
 
 .container{
@@ -29,6 +32,7 @@ section::before{
     min-height: 550px;
     display: flex;
     z-index: 1000;
+    background: #fff;
 }
 
 .container .contactInfo{
@@ -36,7 +40,7 @@ section::before{
     top: 40px;
     width: 350px;
     height: calc(100% - 80px);
-    background: #21618C;
+    background: #095a55;
     z-index: 1;
     padding: 40px;
     display: flex;
@@ -46,6 +50,19 @@ section::before{
     box-shadow: 0 20px 25px rgba(0,0,0,0.15);
 }
 
+.container .contactInfo h2{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.container .contactInfo ul.info{
+    position: relative;
+    margin: 20px 0; 
+}
+
+.container
+
 .container .contactForm{
     position: absolute;
     padding: 70px 50px;
@@ -53,176 +70,6 @@ section::before{
     margin-left: 150px;
     width: calc(100% - 150px);
     height: 100%;
-    background: #f1f6fd;
+    background: red;
+    box-shadow: 0 50px 50px rgba(0,0,0,0.25);
 }
-
-
-
-/* FOOTER */
-footer {
-    position: fixed;
-    bottom: 0;
-}
-
-@media (max-height:800px) {
-    footer {
-        position: static;
-    }
-    header {
-        padding-top: 40px;
-    }
-}
-
-.footerAcomodo {
-    background-color: #1f274c;
-    box-sizing: border-box;
-    width: 100%;
-    text-align: left;
-    font: bold 16px sans-serif;
-    padding: 50px 50px 60px 50px;
-    margin-top: 80px;
-}
-
-.footerAcomodo .footerIzq, .footerAcomodo .footerCentro, .footerAcomodo .footerDerecho {
-    display: inline-block;
-    vertical-align: top;
-}
-
-/* Footer Izquierdo */
-
-.footerAcomodo .footerIzq {
-    width:35%;
-}
-
-.footerAcomodo h3 {
-    color: #f1f6fd;
-    margin: 0;
-}
-
-/* Footer links */
-
-.footerAcomodo .footerLinks {
-    color: #f1f6fd;
-    margin: 20px 0 12px;
-}
-
-.footerAcomodo .footerLinks a {
-    display: inline-block;
-    line-height: 1.8;
-    text-decoration: none;
-    color: inherit;
-}
-
-.footerAcomodo .footerCopy {
-    color: #616a75;
-    font-size: 14px;
-    font-weight: normal;
-    margin: 0;
-}
-
-/* Footer Centro */
-
-.footerAcomodo .footerCentro {
-    width: 30%;
-    margin-left: 50px;
-}
-
-.footerAcomodo .footerCentro i {
-    background-color: #3554c0;
-    color: #ffffff;
-    font-size: 25px;
-    width: 32px;
-    height: 38px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 42px;
-    margin: 10px 15px;
-    vertical-align: middle;
-}
-
-.footerAcomodo .footerCentro i.fa-envelope {
-    font-size: 17px;
-    line-height: 38px;
-}
-
-.footerAcomodo .footerCentro p {
-    display: inline-block;
-    color: #ffffff;
-    vertical-align: middle;
-    margin: 0;
-}
-
-.footerAcomodo .footerCentro p span {
-    display: block;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 2;
-}
-
-.footerAcomodo .footerCentro p a {
-    color: #21618C;
-    text-decoration: none;
-    ;
-}
-
-/* Footer Derecho */
-
-.footerAcomodo .footerDerecho {
-    width: 30%;
-}
-
-.footerAcomodo .footerNosotros {
-    line-height: 20px;
-    color: #92999f;
-    font-size: 13px;
-    font-weight: normal;
-    margin: 0;
-}
-
-.footerAcomodo .footerNosotros span {
-    display: block;
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.footerAcomodo .footerIconos {
-    margin-top: 25px;
-}
-
-.footerAcomodo .footerIconos a {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    background-color: #3554c0;
-    border-radius: 2px;
-    font-size: 20px;
-    color: #ffffff;
-    text-align: center;
-    line-height: 35px;
-    margin-right: 3px;
-    margin-bottom: 5px;
-}
-
-.footerAcomodo .footerIconos a:hover {
-    background-color: #74a3e6;
-}
-
-.footerLinks a:hover {
-    color: #74a3e6;
-}
-
-@media (max-width: 880px) {
-    .footerAcomodo .footerIzq, .footerAcomodo .footerCentro, .footerAcomodo .footerDerecho {
-        display: block;
-        width: 100%;
-        margin-bottom: 40px;
-        text-align: center;
-    }
-    .footerAcomodo .footerCentro i {
-        margin-left: 0;
-    }
-}       
-
