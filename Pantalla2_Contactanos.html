@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-     <!-- HEAD -->
-     <head>
+    <!-- HEAD -->
+    <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Responsive Contact Us Page UI Design | Html CSS</title>
@@ -11,13 +11,25 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/Pantalla2_Contactanos.css">
     </head>
+
     <!-- HEADER -->
+    <header>
+        <ul>
+            <li><img src="/IMAGENES_PULLSTAR/Logo_Prueba.png" alt="Logo Pulstar"></li>
+            <li><a href="/Pantalla1_Inicio.html">Inicio</a></li>
+            <li><a href="/Pantalla1_Inicio.html">Servicio</a></li>
+            <li><a href="/Pantalla1_Inicio.html">Proyectos</a></li>
+            <li><a href="/Pantalla1_Inicio.html">Beneficios</a></li>
+            <li><a href="/Pantalla1_Inicio.html">Galeria</a></li>
+            <li id="contacto"><a href="/Pantalla2_Contactanos.html">Contactános</a></li>
+        </ul>
+    </header>
 
     <body>
     <!-- CONTENIDO -->
         <section>
             <div class="container">
-                <div class="contactInfo"></div>
+                <div class="contactInfo">
                     <div>
                         <h2>Contactános</h2>
                         <ul class="info">
@@ -47,26 +59,26 @@
                     <div class="formBox">
                         <div class="inputBox w50">
                             <input type="text" required>
-                            <span>First Name</span>
-                        </div>
-                        <div class="inputBox w50">
-                            <input type="text" required>
-                            <span>Last Name</span>
+                            <span>Nombre</span>
                         </div>
                         <div class="inputBox w50">
                             <input type="email" required>
-                            <span>Email Address</span>
+                            <span>E-mail</span>
                         </div>
                         <div class="inputBox w50">
                             <input type="text" required>
-                            <span>Mobile Number</span>
+                            <span>Teléfono</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="text" required>
+                            <span>Asunto</span>
                         </div>
                         <div class="inputBox w100">
                             <textarea required></textarea>
-                            <span>Write your message here...</span>
+                            <span>Escribe tu mensaje...</span>
                         </div>
                         <div class="inputBox w100">
-                            <input type="submit" value="Send">
+                            <input type="submit" value="Enviar">
                         </div>
                     </div>
                 </div> 
@@ -74,6 +86,59 @@
             
         </section>
 
+        <!-- FOOTER -->
+        <footer class="footerAcomodo">
+
+            <div class="footerIzq">
+                <h3>Pulstar</h3>
+
+                <p class="footerLinks">
+                    <a href="#">Inicio</a>
+                    |
+                    <a href="#">Servicios</a>
+                    |
+                    <a href="#">Proyectos</a>
+                    |
+                    <a href="#">Beneficios</a>
+                    |
+                    <a href="#">Galeria</a>
+                </p>
+
+                <p class="footerCopy">Copyright © 2023 <strong>Pulstar</strong> Derechos Reservados</p>
+            </div>
+
+            <div class="footerCentro">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>Nuevo León</span>
+                        Monterrey</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>(81) 3124 1243</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="#">Pulstar@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footerDerecho">
+                <p class="footerNosotros">
+                    <span>Acerca de Nosotros</span>
+                    <strong>Pulstar</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
+                    took a galley of type and scrambled it to make a type specimen book.
+
+
+                </p>
+                <div class="footerIconos">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+        </footer>
 
     </body>
 </html>
