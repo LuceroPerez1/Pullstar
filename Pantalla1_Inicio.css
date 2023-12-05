@@ -253,7 +253,7 @@ section{
 	text-align: center;
 }
 .s-btn{
-	padding: 22px 0px;
+	padding: 2px 0px;
 	width: 140px;
 	height: 40px;
 	border-radius: 20px;
@@ -504,7 +504,7 @@ section{
     height: 120px;
 }
 
-.container .contactForm .formBox .inputBox span{
+.container .contactForm .formBox .inputBox label{
     position: absolute;
     left: 0;
     padding: 5px 0;
@@ -514,10 +514,10 @@ section{
     transition: 0.3s;
 }
 
-.container .contactForm .formBox .inputBox input:focus ~ span,
-.container .contactForm .formBox .inputBox input:valid ~ span,
-.container .contactForm .formBox .inputBox textarea:focus ~ span,
-.container .contactForm .formBox .inputBox textarea:valid ~ span{
+.container .contactForm .formBox .inputBox input:focus ~ label,
+.container .contactForm .formBox .inputBox input:valid ~ label,
+.container .contactForm .formBox .inputBox textarea:focus ~ label,
+.container .contactForm .formBox .inputBox textarea:valid ~ label{
     transform: translateY(-20px);
     font-size: 12px;
     font-weight: 400;

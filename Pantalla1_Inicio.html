@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <!-- HEAD -->
     <head>
         <title>Pulstar</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/Pantalla1_Inicio.css">
         <link rel="shortcut icon" href="#">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -151,29 +154,33 @@
 
             <div class="contactForm">
                 <h2>Formulario</h2>
-                <div class="formBox">
-                    <div class="inputBox w50">
-                        <input type="text" required>
-                        <span>Nombre</span>
+                <form action="https://formsubmit.co/araizamarcelo5@gmail.com" method="POST">
+                    <div class="formBox">
+                        <div class="inputBox w50">
+                            <input type="text" name="Nombre" id="name" required>
+                            <label for="name">Nombre</label>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="email" name="Email" id="email" required>
+                            <label for="email">E-mail</label>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="text" name="Telefono" id="telefono" required>
+                            <label for="telefono">Teléfono</label>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="asunto" name="Asunto" id="asunto" required>
+                            <label for="asunto">Asunto</label>
+                        </div>
+                        <div class="inputBox w100">
+                            <textarea name="mensaje" id="mensaje" required></textarea>
+                            <label for="mensaje">Escribe tu mensaje...</label>
+                        </div>
+                        <input class="s-btn" type="submit" value="Enviar">
+                        <!-- <input tupe="hidden" name="_next" value=""> -->
                     </div>
-                    <div class="inputBox w50">
-                        <input type="email" required>
-                        <span>E-mail</span>
-                    </div>
-                    <div class="inputBox w50">
-                        <input type="text" required>
-                        <span>Teléfono</span>
-                    </div>
-                    <div class="inputBox w50">
-                        <input type="text" required>
-                        <span>Asunto</span>
-                    </div>
-                    <div class="inputBox w100">
-                        <textarea required></textarea>
-                        <span>Escribe tu mensaje...</span>
-                    </div>
-                    <a class="s-btn" href="/Pantalla2_Contactanos.html">Saber más</a>
-                </div>
+                </form>
+                
             </div> 
         </div>
     </section>
